@@ -1,0 +1,31 @@
+:root {
+  --ink: #14272d;
+  --muted: #5d7478;
+  --paper: #f3f7f4;
+  --accent: #b5ee67;
+  --coral: #ef9690;
+  --line: #c9d8d4;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; }
+.page-shell { min-height: 100vh; display: grid; grid-template-columns: 1.1fr .9fr; gap: 8vw; align-items: center; max-width: 1180px; margin: auto; padding: 7vh 6vw; }
+.intro { max-width: 610px; }
+.eyebrow, .card-kicker { color: #679934; font: 700 12px/1.4 monospace; letter-spacing: .12em; }
+h1 { margin: 18px 0 24px; font-size: clamp(52px, 8vw, 96px); line-height: 1.04; letter-spacing: -.055em; }
+.intro-copy, .card-copy { color: var(--muted); font-size: 19px; line-height: 1.6; }
+.notice { display: grid; gap: 8px; margin-top: 38px; padding: 18px 20px; border-left: 5px solid var(--accent); background: white; line-height: 1.5; }
+.notice strong { font-size: 14px; }
+.notice span { color: var(--muted); font-size: 14px; }
+.login-card { padding: 34px; border: 1px solid var(--line); border-top: 7px solid var(--coral); border-radius: 20px; background: #fff; box-shadow: 14px 14px 0 var(--accent); }
+.login-card h2 { margin: 24px 0 8px; font-size: 32px; }
+.card-copy { margin: 0 0 28px; font-size: 15px; }
+.field { margin-top: 14px; }
+.field input { width: 100%; padding: 14px; border: 1px solid #b8c7c4; border-radius: 8px; font: inherit; color: var(--ink); }
+.form-row { display: flex; justify-content: space-between; gap: 12px; margin: 18px 0 24px; color: var(--muted); font-size: 13px; }
+.form-row a { color: var(--ink); }
+.remember { display: flex; gap: 7px; align-items: center; }
+.fake-submit { padding: 15px; border-radius: 8px; background: var(--ink); color: white; text-align: center; font-weight: 700; }
+.form-message { min-height: 20px; margin: 12px 0 0; color: #ad4039; font-size: 13px; }
+.hint { margin: 24px 0 0; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.5; }
+@media (max-width: 760px) { .page-shell { grid-template-columns: 1fr; gap: 42px; padding: 34px 22px 54px; } h1 { font-size: 58px; } .login-card { padding: 24px; } }
